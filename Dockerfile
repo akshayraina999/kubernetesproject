@@ -1,10 +1,10 @@
-FROM ubuntu:20.04
+FROM centos:latest
 MAINTAINER akshayraina999@gmail.com
 RUN  apt-get update -y && \
      apt-get upgrade -y 
-RUN apt-get install zip -y \
+RUN yum install zip -y \
   unzip
-RUN apt-get install httpd -y 
+RUN yum install httpd -y 
 ADD https://www.free-css.com/assets/files/free-css-templates/download/page258/loxury.zip /var/www/html/
 WORKDIR /var/www/html
 RUN unzip loxury.zip
