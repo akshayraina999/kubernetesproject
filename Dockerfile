@@ -2,6 +2,7 @@ FROM centos:latest
 MAINTAINER akshayraina999@gmail.com
 # RUN  apt-get update -y && \
 #      apt-get upgrade -y 
+RUN yum update
 RUN yum install zip -y \
   unzip
 RUN yum install httpd -y 
