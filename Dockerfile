@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:centos7
 MAINTAINER akshayraina999@gmail.com
 # RUN  apt-get update -y && \
 #      apt-get upgrade -y 
